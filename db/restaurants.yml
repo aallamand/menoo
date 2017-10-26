@@ -1,0 +1,62 @@
+restaurants:
+  obermama:
+    name: "OberMamma"
+    description: "Excellent italian restaurant"
+    address: "107 Boulevard Richard Lenoir, 75011 Paris"
+    phone: "01 58 30 62 78"
+    instagram: "bigmammagroup"
+    email: "love@bigmamma.fr"
+    website: "http://www.bigmammagroup.com/"
+  louve:
+    name: "Louve"
+    description: "Little wine bar with great references"
+    address: "17 Rue Breguet, 75011 Paris"
+    phone: "01 43 38 90 80"
+    instagram: "louvecave"
+    email: "contact@louve.vin"
+    website: "http://www.louve.vin/"
+  lacomete:
+    name: "La comète"
+    description: "Restaurant specialized in red meat"
+    address: "140 Rue de la Roquette, 75011 Paris"
+    phone: "01 40 24 06 83"
+    instagram: "cometeparis"
+    email: "http://lacometeparis.fr/fr/contact"
+    website: "http://lacometeparis.fr/"
+menus:
+  menu1:
+    name: "Summer menu"
+    description: "This menu is fresh and breath like the open wild. You will understand why it is cool to be in France"
+  menu2:
+    name: "Winter Menu"
+    description: "Cheese, Cheese cheese everywhere, looking forward to eat our raclette together"
+  menu3:
+    name: "Burger Menu"
+    description: "Get an echantillon of the best burgers in France"
+foods:
+    food1:
+      name: "Blue Burger"
+      description: "Great burger with blue cheese and fine meat"
+      price: 12
+    food2:
+      name: "Greek Salad"
+      description: "Amazing salad made with tomatoes, cucumber, feta (greek cheese), red oignons and olive oil. "
+      price: 25
+    food3:
+      name: "Grilled Lamb"
+      description: "A fine piece a lamb grilled with care and precision"
+      price: 30
+    food4:
+      name: "Pasta al'Vongole"
+      description: "Pasta with seafruits in it. The chef love you will too!"
+      price: 40
+    food5:
+      name: "Chicken with forest Mushroom"
+      description: "Chicken cooked with mushroom, ancient mustard recipe and cream! Delicious!"
+      price: 50
+    food6:
+      name: "Fresh fish grilled"
+      description: "Fresh fish depending on the stock grilled a la plancha"
+      price: 60
+
+
