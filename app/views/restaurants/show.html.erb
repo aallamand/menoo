@@ -11,32 +11,34 @@
     <h2><%= @restaurant.name %></h2>
   </div>
   <div class="menu-frame">
-    <div>
-      <h1>MENU INFORMATIONS</h1>
+    <div class= "menu-title">
       <% @restaurant.menus.each do |menu| %>
-        <p><%= menu.name %></p>
-        <p><%= menu.description %></p>
+        <h3><%= menu.name %></h3>
+        <h4><%= menu.description %></h4>
+    </div>
+    <div class="menu-content">
         <% menu.foods.each_with_index do |food, index| %>
-          <div>
-            <h1>FOOD INFORMATIONS #<%= index + 1 %></h1>
-            <p><%= food.name %></p>
-            <p><%= food.description %></p>
-            <p><%= food.price %></p>
+        <div class="menu-content-lines">
+            <div class="menu-content-line1">
+              <p><%= food.name %></p>
+              <p><%= food.price %>€</p>
+            </div>
+            <div class="menu-content-line2">
+              <p><%= food.description %></p>
+            </div>
           </div>
         <% end %>
       <% end %>
     </div>
   </div>
+  <div class="restaurant-informations">
+    <p><%= @restaurant.address %></p>
+    <p><%= @restaurant.phone %></p>
+    <p><%= @restaurant.instagram %></p>
+    <p><%= @restaurant.email %></p>
+    <p><%= @restaurant.website %></p>
+  </div>
 </div>
-<div>
-  <h1>RESTAURANT INFORMATIONS</h1>
 
-  <p><%= @restaurant.description %></p>
-  <p><%= @restaurant.address %></p>
-  <p><%= @restaurant.phone %></p>
-  <p><%= @restaurant.instagram %></p>
-  <p><%= @restaurant.email %></p>
-  <p><%= @restaurant.website %></p>
-</div>
 
 
