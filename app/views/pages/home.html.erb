@@ -1,15 +1,21 @@
 <div id="home">
 
-<div class="main-header">
-  <div class="logo">
-  <%= image_tag "logo.svg", id: "logo" %>
+  <div class="main-header">
+    <div class="logo">
+    <%= image_tag "logo.svg", id: "logo" %>
+    </div>
+    <div class="logo-header">
+      <h1>Meniu</h1>
+    </div>
   </div>
-  <div class="logo-header">
-    <h1>Meniu</h1>
+
+  <div class="search">
+    <div class="search-icon">
+      <%= image_tag "search.png" %>
+    </div>
+    <div class="search-input">
+      <!-- <p>Find any restaurant’s menu</p> -->
+       <%= text_field_tag :search, "", placeholder: 'Find any restaurant’s menu', class: 'form-fied' %>
+    </div>
   </div>
-</div>
-
-<div class="search">
-
-</div>
 </div>
