@@ -34,8 +34,8 @@ autocomplete('#aa-search-input',
     templates: {
         //'suggestion' templating function used to render a single suggestion
         suggestion: function(suggestion) {
-          return '<a href="restaurants/' + suggestion.objectID + '"' + '>' + '<span>' +
-            suggestion._highlightResult.name.value + suggestion.address + '</span>' + '</a>';
+          return '<a href="restaurants/' + suggestion.objectID + '"' + '>' + '<div>' +
+            suggestion._highlightResult.name.value + '</div>' + '<div class="address">' + '<i class="fa fa-map-marker" aria-hidden="true"></i>' + ' ' + suggestion.address + '</div>' + '</a>';
         }
     }
 });
