@@ -16,7 +16,7 @@ gem 'jquery-rails'
 gem 'sass-rails'
 gem 'simple_form'
 gem 'uglifier'
-
+gem "algoliasearch-rails"
 gem 'forest_liana'
 
 group :development, :test do
