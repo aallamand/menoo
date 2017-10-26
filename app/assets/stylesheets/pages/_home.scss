@@ -10,8 +10,9 @@
 .main-header {
   display: flex;
   align-items: center;
-  margin-top: -100px;
-  margin-bottom: 100px;
+  margin-top: -150px;
+  margin-bottom: 50px;
+  margin-left: -25px;
 }
 .logo img {
   width: 60px;
@@ -21,61 +22,35 @@
   margin-bottom: 22.5px;
 }
 
-.search {
-  width: 546px;
-  height: 76px;
-  border-radius: 8px;
-  background-color: $white;
-  box-shadow: 0 6px 8px 0 $white-grey;
-  border: solid 2px $light-gray;
-  display: flex;
-  align-items: center;
-  .search-icon {
-    padding: 27px;
-  }
-  p {
-    margin: 0;
-    font-size: 18px;
-    color: $smooth-grey;
-  }
-}
-  .search-input {
-    flex-grow: 1;
-    input {
-      width: 100%;
-      border: 0;
-      outline:none;
-    }
-  }
-
-
-
-
 .aa-input-container {
   display: inline-block;
   position: relative; }
 .aa-input-search {
-  width: 300px;
-  border: 1px solid rgba(228, 228, 228, 0.6);
-  padding: 12px 28px 12px 12px;
+  width: 500px;
+  border-radius: 8px;
+  border: solid 2px $light-gray;
+  box-shadow: 0 6px 8px 0 $white-grey;
+  padding: 25px 30px 25px 75px;
   box-sizing: border-box;
   -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none; }
+  appearance: none;
+  outline:none;
+  }
   .aa-input-search::-webkit-search-decoration, .aa-input-search::-webkit-search-cancel-button, .aa-input-search::-webkit-search-results-button, .aa-input-search::-webkit-search-results-decoration {
     display: none; }
 .aa-input-icon {
-  height: 16px;
-  width: 16px;
+  height: 23px;
+  width: 23px;
   position: absolute;
   top: 50%;
-  right: 16px;
+  left: 25px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   fill: #e4e4e4; }
 .aa-dropdown-menu {
   background-color: #fff;
-  border: 1px solid rgba(228, 228, 228, 0.6);
+  border-bottom: 1px solid rgba(228, 228, 228, 0.6);
   min-width: 300px;
   margin-top: 10px;
   box-sizing: border-box; }
