@@ -1,1 +1,26 @@
-<p>salut aussi </p>
+<div>
+  <h1>RESTAURANT INFORMATIONS</h1>
+  <p><%= @restaurant.name %></p>
+  <p><%= @restaurant.description %></p>
+  <p><%= @restaurant.address %></p>
+  <p><%= @restaurant.phone %></p>
+  <p><%= @restaurant.instagram %></p>
+  <p><%= @restaurant.email %></p>
+  <p><%= @restaurant.website %></p>
+</div>
+
+<div>
+  <h1>MENU INFORMATIONS</h1>
+  <% @restaurant.menus.each do |menu| %>
+    <p><%= menu.name %></p>
+    <p><%= menu.description %></p>
+    <% menu.foods.each_with_index do |food, index| %>
+      <div>
+        <h1>FOOD INFORMATIONS #<%= index + 1 %></h1>
+        <p><%= food.name %></p>
+        <p><%= food.description %></p>
+        <p><%= food.price %></p>
+      </div>
+    <% end %>
+  <% end %>
+</div>
