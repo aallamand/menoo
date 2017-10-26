@@ -3,7 +3,7 @@ class Restaurant < ApplicationRecord
   include AlgoliaSearch
 
   algoliasearch do
-    attribute :name
+    attribute :name, :address
   end
 end
 
