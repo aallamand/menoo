@@ -36,6 +36,7 @@
   -moz-appearance: none;
   appearance: none;
   outline:none;
+
   }
   .aa-input-search::-webkit-search-decoration, .aa-input-search::-webkit-search-cancel-button, .aa-input-search::-webkit-search-results-button, .aa-input-search::-webkit-search-results-decoration {
     display: none; }
@@ -57,6 +58,11 @@
 .aa-suggestion {
   padding: 12px;
   cursor: pointer;
+  // Changer l'aspect des suggestions de résultats
+  a {
+    text-decoration: none;
+    color: $smooth-grey;
+  }
 }
 .aa-suggestion + .aa-suggestion {
     border-top: 1px solid rgba(228, 228, 228, 0.6);
