@@ -45,7 +45,7 @@ autocomplete('#aa-search-input',
         //'suggestion' templating function used to render a single suggestion
         suggestion: function(suggestion) {
           return '<span>' +
-            suggestion._highlightResult.name.value + '</span>';
+            suggestion._highlightResult.name.value + suggestion.address + '</span>';
         }
     }
 });
