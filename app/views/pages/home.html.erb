@@ -38,5 +38,9 @@ autocomplete('#aa-search-input',
             suggestion._highlightResult.name.value + '</div>' + '<div class="address">' + '<i class="fa fa-map-marker" aria-hidden="true"></i>' + ' ' + suggestion.address + '</div>' + '</a>';
         }
     }
-});
+}).on('autocomplete:selected', function(event, suggestion, dataset) {
+    console.log(suggestion, dataset);
+    window.location = "/restaurants/" + suggestion.objectID;
+
+  });
 </script>
