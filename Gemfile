@@ -18,6 +18,7 @@ gem 'simple_form'
 gem 'uglifier'
 gem "algoliasearch-rails"
 gem 'forest_liana'
+gem 'devise'
 
 group :development, :test do
   gem 'pry-byebug'
