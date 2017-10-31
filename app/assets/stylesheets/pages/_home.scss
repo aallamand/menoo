@@ -24,7 +24,8 @@
 }
 .aa-input-container {
   display: inline-block;
-  position: relative; }
+  position: relative;
+}
 .aa-input-search {
   width: 500px;
   border-radius: 8px;
@@ -52,7 +53,7 @@
 .aa-dropdown-menu {
   background-color: #fff;
   border-bottom: 1px solid rgba(228, 228, 228, 0.6);
-  min-width: 300px;
+  min-width: 350px;
   margin-top: 10px;
   box-sizing: border-box; }
 .aa-suggestion {
@@ -77,3 +78,19 @@
   position: absolute;
   bottom: 10px;
 }
+
+
+@media screen and (max-width: 648px) {
+  .aa-input-search {
+  width: 350px;
+  margin: auto;
+  }
+  .display-none {
+    display: none;
+  }
+  .top-search {
+    position: absolute;
+    top: 20px;
+  }
+}
+
